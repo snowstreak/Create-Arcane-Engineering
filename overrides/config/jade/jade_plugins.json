@@ -38,6 +38,9 @@
     "redstone": true,
     "fe": true
   },
+  "chunkymcchunkface": {
+    "show_time": true
+  },
   "create": {
     "contraption_inv": true,
     "blaze_burner": true,

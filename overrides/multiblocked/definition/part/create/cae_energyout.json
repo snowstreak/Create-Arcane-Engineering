@@ -5,7 +5,7 @@
   "properties": {
     "rotationState": "ALL",
     "showInJei": true,
-    "isOpaque": true,
+    "isOpaque": false,
     "hasDynamicShape": false,
     "hasCollision": true,
     "destroyTime": 1.5,
@@ -20,13 +20,15 @@
   "status": {
     "unformed": {
       "renderer": {
-        "baseTexture": "multiblocked:blocks/gregtech_base",
-        "frontTexture": "multiblocked:blocks/gregtech_front",
-        "type": "gregtech",
+        "modelName": "rpm",
+        "isGlobal": true,
+        "type": "geo",
         "postRenderer": false
-      }
+      },
+      "lightEmissive": 15
     },
     "idle": {
+      "lightEmissive": 11,
       "parent": "unformed"
     },
     "working": {

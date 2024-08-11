@@ -36,4 +36,6 @@ onEvent('recipes',event =>{
     event.remove({id:`createcasing:crafting/press/industrial_iron`})
 
     event.smithing(`createcasing:industrial_iron_press`,`create:mechanical_press`,"create:" +"industrial_iron"+ `_block`)
+    event.remove({output:/^createcasing:creative/})
+    event.remove({input:/^createcasing:creative/})
 })

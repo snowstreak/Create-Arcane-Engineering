@@ -61,7 +61,7 @@ onEvent('recipes', event => {
 onEvent('level.tick', event => {
   event.level.getEntities('@e[type=cae:essentialorb]').forEach(Orb => {
     if (Orb.fullNBT.getInt('kubejsdoshit')){
-      Orb.block.popItem('forbidden_arcanus:orb_of_temporary_flight')
+      Orb.block.popItemFromFace('forbidden_arcanus:orb_of_temporary_flight',"up")
       Orb.remove()
     }
   });

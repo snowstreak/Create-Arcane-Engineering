@@ -69,7 +69,6 @@
 				"3E7D072F1C7A0B14"
 				"191EE221A8EEE8F3"
 			]
-			hide: true
 			dependency_requirement: "one_completed"
 			id: "69F021C402A96487"
 			tasks: [{
@@ -144,7 +143,7 @@
 				"19EAE1780E1BAB55"
 				"1FAEF479BCF83D6F"
 			]
-			hide: true
+			hide: false
 			dependency_requirement: "one_completed"
 			id: "7E9E78A1997AB84E"
 			tasks: [{

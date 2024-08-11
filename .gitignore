@@ -1,6 +1,8 @@
 # Exclude folders
 overrides/saves/
 CreateArcaneEngineeringblabla/
+DHxom/
+SimplyOptimized*/
 ArcaneTrailer/
 overrides/plugins/
 overrides/mods/
@@ -125,3 +127,4 @@ overrides/libvlccore.dll
 overrides/schematics/ds.nbt
 overrides/schematics/sd.nbt
 overrides/schematics/sdsad.nbt
+/overrides/Distant_Horizons_server_data

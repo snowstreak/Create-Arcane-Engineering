@@ -1,5 +1,8 @@
 
 ["Configs for Modern Train Parts"]
-	#If wires render offscreen (might worsen performance)
+	#If wires should render offscreen (might worsen performance)
 	render_wires_offscreen = false
+	#The spacing between wire hangers
+	#Range: > 1
+	wire_hanger_spacing = 2
 

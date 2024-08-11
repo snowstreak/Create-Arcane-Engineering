@@ -31,8 +31,10 @@ onEvent('tags.items', event => {
     event.add('davebuildingmod:skeleton', /^davebuildingmod:skeleton_/)
 
     //Ty too #DarkLotus
-    event.add('ae2:blacklisted/spatial', '#forge:relocation_not_supported');
+    event.add('forge:relocation_not_supported', "minecraft:barrier");
     event.add('forge:relocation_not_supported', /cae:.+_catalyst/);
+    event.add('ae2:blacklisted/spatial', '#forge:relocation_not_supported');
+    
     const wrenchpickupables = 
     ["#thermal:", "", "", "", "", "", "", "", "", "",]
 

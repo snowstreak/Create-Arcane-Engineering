@@ -1,0 +1,33 @@
+{
+  "name": "epic_shit",
+  "progressTexture": "multiblocked:textures/gui/progress_bar_arrow.png",
+  "fuelTexture": "multiblocked:textures/gui/progress_bar_fuel.png",
+  "recipes": [
+    {
+      "uid": "f6780dab-1b6e-4413-8230-704afe7ae883",
+      "duration": 160,
+      "inputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "kubejs:sky_solution",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      },
+      "outputs": {
+        "fluid": [
+          {
+            "content": {
+              "fluid": "thermal:crude_oil",
+              "amount": 1000
+            },
+            "chance": 1.0
+          }
+        ]
+      }
+    }
+  ]
+}

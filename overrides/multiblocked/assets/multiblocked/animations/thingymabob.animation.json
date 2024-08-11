@@ -1,0 +1,65 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idle": {
+			"loop": true,
+			"animation_length": 16,
+			"bones": {
+				"Emissive": {
+					"position": {
+						"vector": [0, 40, 0]
+					}
+				},
+				"Surround": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"16.0": {
+							"vector": [1440, -1440, 1440]
+						}
+					}
+				},
+				"Enchant": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"16.0": {
+							"vector": [0, 0, -1440],
+							"easing": "easeInOutExpo"
+						}
+					}
+				},
+				"EnchantRing": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"16.0": {
+							"vector": [0, -1440, 0],
+							"easing": "easeInOutExpo"
+						}
+					}
+				},
+				"Enchant47": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"16.0": {
+							"vector": [0, -1440, 0],
+							"easing": "easeInOutExpo"
+						}
+					}
+				},
+				"Eye": {
+					"rotation": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

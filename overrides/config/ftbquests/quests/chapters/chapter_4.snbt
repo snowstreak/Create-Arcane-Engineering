@@ -72,6 +72,7 @@
 				"77D54D48FAB23B17"
 				"15CC7068585F0644"
 			]
+			hide: false
 			id: "298CEF160DE9001A"
 			tasks: [{
 				id: "7CF0C1AC7764D08E"
@@ -230,7 +231,6 @@
 			x: 3.5d
 			y: 21.0d
 			dependencies: ["298CEF160DE9001A"]
-			hide: true
 			id: "4A65497930CBBA31"
 			tasks: [
 				{
@@ -1157,28 +1157,28 @@
 		}
 		{
 			title: "Option 2: Moss"
+			icon: "immersive_weathering:moss_clump"
 			x: -2.0d
 			y: 15.0d
 			dependencies: ["19232B8B77F86AF8"]
 			hide: true
 			id: "0EFA51A5AF8428DF"
 			tasks: [{
-				id: "7D167CA0860E4AB8"
-				type: "item"
-				item: "immersive_weathering:moss_clump"
+				id: "17250B7CE6B1B36A"
+				type: "checkmark"
 			}]
 		}
 		{
 			title: "Option 1: Cactus"
+			icon: "minecraft:cactus"
 			x: -1.5d
 			y: 14.0d
 			dependencies: ["19232B8B77F86AF8"]
 			hide: true
 			id: "468D68720E0E5CF1"
 			tasks: [{
-				id: "1D37CD38EC4B7A7A"
-				type: "item"
-				item: "minecraft:cactus"
+				id: "370BAE1CAE24C5D1"
+				type: "checkmark"
 			}]
 		}
 		{

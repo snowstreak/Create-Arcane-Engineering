@@ -1,0 +1,245 @@
+{
+  "version": 3,
+  "location": "cae:land_pump",
+  "traits": {
+    "background": "multiblocked:textures/drill_tower_arcane.png",
+    "fluid": [
+      {
+        "cIO": 2,
+        "gIO": 2,
+        "mIO": 2,
+        "x": 76,
+        "y": 174,
+        "autoIO": false,
+        "tC": 16000,
+        "w": 32,
+        "h": 36,
+        "fillDir": "ALWAYS_FULL",
+        "valid": [
+          "\"{Amount:1000,FluidName:\\\"kubejs:sky_solution\\\"}\""
+        ]
+      }
+    ]
+  },
+  "properties": {
+    "rotationState": "ALL",
+    "showInJei": true,
+    "isOpaque": false,
+    "hasDynamicShape": false,
+    "hasCollision": true,
+    "destroyTime": 10000.0,
+    "explosionResistance": 10000.0,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "friction": 0.6,
+    "harvestLevel": 10000,
+    "stackSize": 64,
+    "tabGroup": "multiblocked.all"
+  },
+  "status": {
+    "unformed": {
+      "renderer": {
+        "state": {
+          "id": "create:fluid_tank",
+          "meta": 2
+        },
+        "type": "blockstate",
+        "postRenderer": true
+      },
+      "shape": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    "idle": {
+      "renderer": {
+        "modelName": "pump",
+        "isGlobal": true,
+        "type": "geo",
+        "postRenderer": false
+      },
+      "parent": "unformed"
+    },
+    "working": {
+      "lightEmissive": 7,
+      "parent": "idle",
+      "sound": {
+        "sound": "thermal:block.device_water_gen",
+        "loop": true,
+        "delay": 0,
+        "volume": 1.0,
+        "pitch": 1.0
+      }
+    },
+    "suspend": {
+      "parent": "working"
+    }
+  },
+  "recipeMap": "epicshit2",
+  "basePattern": {
+    "structureDir": [
+      "BACK",
+      "UP",
+      "RIGHT"
+    ],
+    "pattern": [
+      [
+        "ABA",
+        " D ",
+        " E ",
+        "   "
+      ],
+      [
+        " @A",
+        " K ",
+        " M ",
+        "   "
+      ],
+      [
+        "HJL",
+        " K ",
+        "   ",
+        "   "
+      ]
+    ],
+    "aisleRepetitions": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "predicates": {
+      "A": {
+        "blocks": [
+          {
+            "id": "create:copycat_step"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "controller": {
+        "location": "cae:land_pump",
+        "type": "component"
+      },
+      "B": {
+        "blocks": [
+          {
+            "id": "multiblocked:fluid_output"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "bar": {
+        "blocks": [
+          {
+            "id": "minecraft:barrier"
+          }
+        ],
+        "type": "blocks"
+      },
+      "D": {
+        "blocks": [
+          {
+            "id": "framedblocks:framed_extended_slope_panel"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "E": {
+        "blocks": [
+          {
+            "id": "framedblocks:framed_prism"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "H": {
+        "blocks": [
+          {
+            "id": "davebuildingmod:helms"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "J": {
+        "blocks": [
+          {
+            "id": "cae:energyout"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true,
+        "io": "IN"
+      },
+      "K": {
+        "blocks": [
+          {
+            "id": "framedblocks:framed_wall"
+          }
+        ],
+        "type": "blocks",
+        "disableRenderFormed": true
+      },
+      "shaft": {
+        "blocks": [
+          {
+            "id": "create:shaft"
+          }
+        ],
+        "type": "blocks"
+      }
+    },
+    "symbolMap": {
+      "@": [
+        "controller"
+      ],
+      " ": [],
+      "A": [
+        "A"
+      ],
+      "B": [
+        "B"
+      ],
+      "D": [
+        "D"
+      ],
+      "E": [
+        "E"
+      ],
+      "H": [
+        "H"
+      ],
+      "J": [
+        "J"
+      ],
+      "K": [
+        "K"
+      ],
+      "L": [
+        "shaft"
+      ],
+      "M": [
+        "bar"
+      ]
+    }
+  }
+}
