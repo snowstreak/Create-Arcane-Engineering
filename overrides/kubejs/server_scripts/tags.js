@@ -59,3 +59,10 @@ onEvent('tags.items', event => {
         "kubejs:portal_actuation_fluid_bucket"
     ])
 })
+
+onEvent('tags.blocks', event => {
+    event.add("create:fan_transparent", "createaddition:liquid_blaze_burner")
+    event.add("create:passive_boiler_heaters", "createaddition:liquid_blaze_burner")
+    event.add("create:fan_processing_catalysts/smoking", "createaddition:liquid_blaze_burner")
+    event.add("create:fan_processing_catalysts/blasting", "createaddition:liquid_blaze_burner")
+})
